@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     }
-    
+    /*Header for formatting/spacing*/
     header{
         height: 45px;
         background-color: blanchedalmond;
     }
 
-    
+    /*Section formatting*/
     section{
         height: 100vh;
         border: 1px solid rgb(0, 0, 0);
@@ -17,16 +17,18 @@
         align-items: center;
     }
     
-    
+    /*Centered image, oval cutout*/
     .Container img{
         height: auto;
         border-radius: 50%;
+        border-color: black;
         display:block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 1%;
     }
-    
+
+    /*Added shadow to "Roshan Arokiaraj", white color, and set font*/
     .Container h2{
         text-shadow: 2px 4px 2px black; 
         color: aliceblue;
@@ -36,8 +38,15 @@
         text-align: center;
     
     }
+    /*Added a hover effect where heading mentioned above
+    Turns text to red and doubles in size*/
+    .Container h2:hover{
+        color: red;
+        font-size: 6em;
 
+    }
 
+    /*Set font and alignment for paragraph description*/
     .Container p{
         margin-top: 1%;
         font-size: 1rem;
@@ -47,7 +56,7 @@
         vertical-align: sub;
         word-wrap:break-word;
     }
-    
+    /*Footer settings/spacing*/
     footer {
         height: 40px;
         display: flex;
@@ -55,18 +64,18 @@
         font-size: 1rem;
         background-color: blanchedalmond;
     }
-
-    @keyframes example {
+    /*Animation settings*/
+    @keyframes animation {
         0%   {background-color:rgb(215, 65, 65); left:0px; top:0px;}
         25%  {background-color:rgb(209, 163, 36); left:200px; top:0px;}
         50%  {background-color:rgb(100, 100, 224); left:200px; top:200px;}
         75%  {background-color:rgb(50, 130, 50); left:0px; top:200px;}
         100% {background-color:rgb(177, 63, 195); left:0px; top:0px;}
       }
-
+    /*Changes background color for a minute and repeats 10 times*/  
     #intro {
         background-color: rgb(217, 151, 51);
-        animation-name: example;
+        animation-name: animation;
         animation-duration: 60s;
         animation-iteration-count: 10;
         }
