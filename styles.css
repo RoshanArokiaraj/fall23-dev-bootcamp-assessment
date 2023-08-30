@@ -1,3 +1,72 @@
-/* Your Styles Here */
-body{
-}
+*{
+    padding: 0;
+    margin: 0;
+    }
+    
+    header{
+        height: 45px;
+        background-color: blanchedalmond;
+    }
+
+    
+    section{
+        height: 100vh;
+        border: 1px solid rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .Container img{
+        height: auto;
+        border-radius: 50%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+    }
+    
+    .Container h2{
+        text-shadow: 2px 4px 2px black; 
+        color: aliceblue;
+        margin-top: 1%;
+        font-size: 3em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    
+    }
+
+
+    .Container p{
+        margin-top: 1%;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-align-last: left;
+        vertical-align: sub;
+        word-wrap:break-word;
+    }
+    
+    footer {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        background-color: blanchedalmond;
+    }
+
+    @keyframes example {
+        0%   {background-color:rgb(215, 65, 65); left:0px; top:0px;}
+        25%  {background-color:rgb(209, 163, 36); left:200px; top:0px;}
+        50%  {background-color:rgb(100, 100, 224); left:200px; top:200px;}
+        75%  {background-color:rgb(50, 130, 50); left:0px; top:200px;}
+        100% {background-color:rgb(177, 63, 195); left:0px; top:0px;}
+      }
+
+    #intro {
+        background-color: rgb(217, 151, 51);
+        animation-name: example;
+        animation-duration: 60s;
+        animation-iteration-count: 10;
+        }
